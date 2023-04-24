@@ -1,0 +1,66 @@
+body {
+  font-family: 'Roboto';
+  margin: 0 10px;
+  padding: 0;
+    
+  display: flex grid;
+  justify-content: center;
+  align-items: center;
+  /*place-items: center;*/
+  background-color: #D9D9E3;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    background-color: #343541;
+}
+
+h2 {
+  text-align: center;
+}
+
+h5 {
+  font-family: 'Rowdies';
+}
+
+a {
+  color: dimgray;
+}
+  
+table {
+    font-family: 'Lato';
+    place-items: center;
+    border-collapse: collapse;
+    background-color: beige;
+}
+
+
+td, th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+div {
+  display: flex grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+iframe {
+  display: inline-block;
+}
+
+.quote {
+  font-family: 'Bruno Ace SC';
+}
+
+.quote-author{
+  display: flex grid;
+  justify-content: right;
+  align-items: right;
+  text-align: right;
+}
+
+  

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Historical Ciphers</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Bruno+Ace+SC|Rowdies|Lato">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h1>Historical Ciphers</h1>
+  <a href="index.html">Go back to Intro to Cryptography</a>
+
+  <h4>Caesar cipher</h4>
+
+  <p>The Caesar cipher, also known as the shift or ROT (rotation) cipher, is a simple encryption technique that involves <b>shifting</b> each letter of a message by a fixed number of positions in the alphabet. It is named after Julius Caesar, who is said to have used this method to send secret messages to his generals during wars.
+  </p>
+  <div>
+    <img src="caesar.png">
+    <h5>Caesar cipher visualized as a shift</h5>
+  </div>
+  <p>To apply the Caesar cipher, the sender chooses a key (a number between 1 and 25) that determines the amount of shift for each letter. For example, if the key is 3, every letter in the message would be shifted three positions down the alphabet. So, "HELLO" would become "KHOOR" under this cipher.
+  </p>
+
+  <p>The ROT13 cipher (Caesar cipher with key 13) is interesting by the fact that the same shift encrypts and decrypts the message (double application returns the original text). Since ROT13 provides virtually no cryptographic security. its last widespread use was to hide spoilers in online forums. Nowadays, it is done with software via CSS and <code>:hover</code> selector. The current main use of ROT13 is to cite it as a canonical example of weak encryption.
+  </p>
+
+  <p>The Caesar cipher is easy to understand and implement, but it is also relatively easy to crack through brute force or frequency analysis. Brute force involves trying every possible key until the correct one is found, while frequency analysis takes advantage of the fact that certain letters are more common in a language than others.
+  </p>
+
+  <p>Despite its weaknesses, the Caesar cipher is still a useful tool for educational purposes and can serve as a stepping stone to more complex encryption techniques. It has also inspired many variations, such as the Vigenere cipher, which are more difficult to crack.
+  </p>
+
+  <div>
+    <img src="caesarRotation.jpg">
+    <h5>Caesar cipher visualized as a rotation</h5>
+  </div>
+
+  <p><a href="https://en.wikipedia.org/wiki/Caesar_cipher">More information about Caesar cipher</a></p>
+  <p><a href="https://multidec.web-lab.at/rot.php">Try Caesar's cipher and ROT variations here!</a></p>
+
+
+  <h4>Pigpen cipher</h4>
+  <p>The Pigpen cipher is a substitution cipher that was used as early as the 18th century. It was often used by Knights Templar and Freemasons to communicate secret messages, but it has also been used by other groups and individuals as a way to hide information.
+  </p>
+
+  <div>
+    <img src="pigpen.png">
+    <h5>Most popular variant of Pigpen</h5>
+  </div>
+
+  <br>
+
+  <div>
+    <img src="maltesepigpen.png">
+    <h5>Possible Knights Templar Pigpen variant, based on Maltese Cross</h5>
+  </div>
+  <p>The cipher uses a grid of symbols, typically consisting of dots, lines, and circles, which represent letters of the alphabet. Each symbol represents a different letter, and the cipher can be easily decrypted if the key to the symbols is known.
+  </p>
+  <p>To use the Pigpen cipher, the sender first writes their message in plain text. They then substitute each letter inthe message with the corresponding symbol from the cipher grid. The recipient of the message can then use the key to decrypt the message and read it in plain text.
+  </p>
+  <div><img src="pigpenexample.png"></div>
+  <p>Since the Pigpen cipher is very easy to use and decipher, in modern times it cannot be an effective way to conceal information unless used in combination with other ciphers. It is easily broken with frequency analysis. Nevertheless, it can be a fun and educational tool for teaching cryptography and code-breaking to students.
+  </p>
+  <p><a href="https://www.boxentriq.com/code-breaking/pigpen-cipher">Try this online Pigpen encoder!</a></p>
+
+  <h2>Check out this table we made to compare and contrast Caesar and Pigpen ciphers!</h2>
+  <table>
+
+    <tr>
+      <th>Feature</th>
+      <th>Caesar Cipher</th>
+      <th>Pigpen Cipher</th>
+    </tr>
+
+    <tr>
+      <td>Type of Cipher</td>
+      <td>Substitution Cipher</td>
+      <td>Substitution Cipher</td>
+    </tr>
+    <tr>
+      <td>History</td>
+      <td>Used by Romans to encrypt military messages and Caesar's private correspondence</td>
+      <td>Used by Freemasons and other groups to communicate secret messages</td>
+    </tr>
+    <tr>
+      <td>Encryption Method</td>
+      <td>Shifts each letter of the plaintext by a fixed number of positions down the alphabet</td>
+      <td>Replaces each letter of the plaintext with a corresponding symbol in a grid</td>
+    </tr>
+    <tr>
+      <td>Key</td>
+      <td>Single numeric value representing the number of positions to shift</td>
+      <td>Grid of symbols representing each letter of the alphabet</td>
+    </tr>
+    <tr>
+      <td>Decryption Method</td>
+      <td>Shifts each letter of the ciphertext by the opposite number of positions up the alphabet</td>
+      <td>Replaces each symbol of the ciphertext with a corresponding letter in the grid</td>
+    </tr>
+    <tr>
+      <td>Security</td>
+      <td>Can be easily decrypted by trying all possible shifts, or by frequency analysis</td>
+      <td>Can be easily decrypted if the key to the grid is known, or by frequency analysis</td>
+    </tr>
+    <tr>
+      <td>Modern Value</td>
+      <td>Useful for teaching basic cryptography concepts</td>
+      <td>Useful for teaching basic cryptography concepts</td>
+    </tr>
+
+  </table>
+
+  <p><a href="index.html">Go back to Intro to Cryptography</a></p>
+</body>
+
+</html>
